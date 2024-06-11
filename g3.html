@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url(bg11.jpg);
+            background-size: cover;
+        }
+
+        .div1 {
+            position: absolute;
+            top: 100px;
+            left: 450px;
+            width: 600px;
+            height: 600px;
+            background-color: black;
+            opacity: 0.4;
+        }
+
+        .div2 {
+            position: absolute;
+            top: 0px;
+            left: 450px;
+            width: 500px;
+            height: 400px;
+            padding: 50px;
+            color: white;
+        }
+
+        .a {
+            width: 450px;
+            margin: 15px;
+            padding: 15px;
+            background-color: transparent;
+            border: none;
+            border-bottom-style: solid;
+            color: white;
+        }
+
+        .b {
+            margin: 10px;
+            margin-left: 20px;
+            color: white;
+        }
+
+        .c {
+            width: 200px;
+            margin: 15px;
+            padding: 10px;
+            background-color: rgb(88, 244, 77);
+            margin-left: 150px;
+            color: white;
+            border: none;
+            border-radius: 30px;
+        }
+
+        .image {
+            margin-left: 200px;
+            background-color: transparent;
+        }
+
+        ::placeholder {
+            color: white;
+            font-weight: bold;
+        }
+        
+        .jj{
+            position: absolute;
+            top:232px;
+            left:200px;
+            font-size: 17px;
+        }
+        .kk{
+            height: 70px;
+        }
+        .ii{
+            position: absolute;
+            top:302px;
+            left:200px;
+            font-size: 17px;
+            width: 300px;
+        }
+        .xx{
+            position: absolute;
+            top:372px;
+            left:200px;
+            font-size: 17px;
+            width: 300px;
+        }
+        .yy{
+            position: absolute;
+            top:442px;
+            left:200px;
+            font-size: 17px;
+            width: 300px;
+        }
+        .zz{
+            position: absolute;
+            top:515px;
+            left:270px;
+            font-size: 17px;
+            width: 300px;
+        }
+
+    </style>
+
+<script>
+function jp(){
+    alert("Thank you for registering")
+}
+
+    function a1() {
+        var z = document.getElementById("t1").value;
+        if (isNaN(z) == true) {
+            document.getElementById("t11").innerHTML = "enter valid age";
+            document.getElementById("t11").style.color = "red";
+            document.getElementById("t11").style.fontSize = "17px";
+        }
+        else if (z > 90 || z < 12) {
+            document.getElementById("t11").innerHTML = "entered age must be between 12 and 90";
+            document.getElementById("t11").style.color = "red";
+            document.getElementById("t11").style.fontSize = "17px";
+            
+        }
+        else {
+            document.getElementById("t11").innerHTML = "Approved";
+            document.getElementById("t11").style.color = "lightgreen";
+            document.getElementById("t11").style.fontSize = "17px";
+        }
+    }
+    function a2() {
+        var j = document.getElementById("t2").value;
+
+        if (isNaN(j) == true) {
+            document.getElementById("t22").innerHTML = "enter valid mobile number";
+            document.getElementById("t22").style.color = "red";
+            document.getElementById("t22").style.fontSize = "17px";
+        }
+        else if (j.length > 10 || j.length < 10) {
+            document.getElementById("t22").innerHTML = "enter valid mobile no.";
+            document.getElementById("t22").style.color = "red";
+            document.getElementById("t22").style.fontSize = "17px";
+        }
+        else {
+            document.getElementById("t22").innerHTML = "Approved";
+            document.getElementById("t22").style.color = "lightgreen";
+            document.getElementById("t22").style.fontSize = "17px";
+        }
+    }
+    function a3() {
+        var k = document.getElementById("t3").value;
+        var d = /^[a-zA-Z]+(?:-[a-zA-Z]+)*(?: [a-zA-Z]+(?:-[a-zA-Z]+)*)*$/;
+        if (d.test(k) == true) {
+            if (isNaN(k) != true) {
+                document.getElementById("t33").innerHTML = "enter valid name";
+                document.getElementById("t33").style.color = "red";
+                 document.getElementById("t33").style.fontSize = "17px";
+            }
+            else if (k.length > 100) {
+                document.getElementById("t33").innerHTML = "enter valid name";
+                document.getElementById("t33").style.color = "red";
+                 document.getElementById("t33").style.fontSize = "17px";
+            }
+            else {
+                document.getElementById("t33").innerHTML = "Approved";
+                document.getElementById("t33").style.color = "lightgreen";
+                document.getElementById("t33").style.fontSize = "17px";
+            }
+            // document.getElementById("t33").innerHTML = "Approved";
+            //     document.getElementById("t33").style.color = "green";
+        }
+        else {
+            document.getElementById("t33").innerHTML = "enter valid name";
+            document.getElementById("t33").style.color = "red";
+             document.getElementById("t33").style.fontSize = "17px";
+        }
+    }
+    function a4() {
+        var p = document.getElementById("t4").value;
+        var q = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        ;
+        if (q.test(p) == true) {
+
+            document.getElementById("t44").innerHTML = "Approved";
+            document.getElementById("t44").style.color = "lightgreen";
+            document.getElementById("t44").style.fontSize = "17px";
+        }
+        else {
+            document.getElementById("t44").innerHTML = "invalid e-mail";
+            document.getElementById("t44").style.color = "red";
+             document.getElementById("t44").style.fontSize = "17px";
+        }
+    }
+
+    function a5() {
+        var e = document.getElementById("t5").value;
+        if (isNaN(e) == true) {
+            document.getElementById("t55").innerHTML = "enter valid roll no.";
+            document.getElementById("t55").style.color = "red";
+             document.getElementById("t55").style.fontSize = "17px";
+        }
+
+        else {
+            document.getElementById("t55").innerHTML = "Approved";
+            document.getElementById("t55").style.color = "lightgreen";
+            document.getElementById("t55").style.fontSize = "17px";
+        }
+    }
+    function a6() {
+        var f = document.getElementById("t6").value;
+        var g = /^[a-zA-Z0-9\s,.'-]{3,}$/;
+        if (g.test(f) == true) {
+            
+            document.getElementById("t66").innerHTML = "Approved"
+                document.getElementById("t66").style.color = "lightgreen";
+                document.getElementById("t66").style.fontSize = "17px";
+        }
+        else{
+            document.getElementById("t66").innerHTML = "enter valid address";
+            document.getElementById("t66").style.color = "red";
+            document.getElementById("t66").style.fontSize = "17px";
+        }
+    }
+</script>
+</head>
+
+<body>
+    <div class="div1"></div>
+
+    <div class="div2">
+        <div class="image"><img src="avatar2.jpg" alt="" width="100px" height="100px"
+                style="background-color: transparent; border-radius: 360px;"></div> <br>
+        <div style="font-size: 30px;color: white; margin-left: 90px;"><b>REGISTRATION FORM</b></div>
+
+
+        <div class="kk">
+            <input type="text" name="" placeholder="FULL NAME" class="a" id="t3" onblur="a3()"> <span id="t33" class="jj"></span> <br>
+        </div>
+       <div  class="kk">
+        <input type="text" name="" placeholder="AGE" class="a" id="t1" onblur="a1()"> <span id="t11" class="ii"></span><br>
+       </div>
+       <div class="kk">
+        <input type="text" name="" placeholder="ROLL NO." class="a" id="t5" onblur="a5()"> <span id="t55" class="xx"></span><br>
+    </div>
+   <div class="kk">
+    <input type="text" name="" placeholder="PHONE NO." class="a" id="t2" onblur="a2()"><span id="t22" class="yy"></span> <br>
+   </div>
+   <div class="kk">
+    <input type="text" name="" placeholder="E-MAIL" class="a" id="t4" onblur="a4()"><span id="t44" class="zz"></span><br>
+   </div>
+        
+
+        <br>
+       <a href="g4.html"> <input type="button" value="Register me" class="c" > <br></a>
+        <input type="checkbox" name="" id="" class="b"><div style="display: inline; font-size: 14px;">Notify me when my form gets approved</div><br>
+    </div>
+</body>
+
+</html>
